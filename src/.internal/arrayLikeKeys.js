@@ -1,7 +1,7 @@
-import isArguments from '../isArguments.js'
-import isBuffer from '../isBuffer.js'
-import isIndex from './isIndex.js'
-import isTypedArray from '../isTypedArray.js'
+const isArguments = require('../isArguments.js');
+const isBuffer = require('../isBuffer.js');
+const isIndex = require('./isIndex.js');
+const isTypedArray = require('../isTypedArray.js');
 
 /** Used to check objects for own properties. */
 const hasOwnProperty = Object.prototype.hasOwnProperty
@@ -40,4 +40,4 @@ function arrayLikeKeys(value, inherited) {
   return result
 }
 
-export default arrayLikeKeys
+module.exports = arrayLikeKeys;

@@ -1,5 +1,5 @@
-import baseFor from './baseFor.js'
-import keys from '../keys.js'
+const baseFor = require('./baseFor.js');
+const keys = require('../keys.js');
 
 /**
  * The base implementation of `forOwn`.
@@ -13,4 +13,4 @@ function baseForOwn(object, iteratee) {
   return object && baseFor(object, iteratee, keys)
 }
 
-export default baseForOwn
+module.exports = baseForOwn;

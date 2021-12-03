@@ -22,4 +22,4 @@ function arrayReduce(array, iteratee, accumulator, initAccum) {
   return accumulator
 }
 
-export default arrayReduce
+module.exports = arrayReduce;

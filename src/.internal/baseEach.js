@@ -1,5 +1,5 @@
-import baseForOwn from './baseForOwn.js'
-import isArrayLike from '../isArrayLike.js'
+const baseForOwn = require('./baseForOwn.js');
+const isArrayLike = require('../isArrayLike.js');
 
 /**
  * The base implementation of `forEach`.
@@ -28,4 +28,4 @@ function baseEach(collection, iteratee) {
   return collection
 }
 
-export default baseEach
+module.exports = baseEach;

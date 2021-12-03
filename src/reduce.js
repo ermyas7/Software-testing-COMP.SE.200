@@ -1,6 +1,6 @@
-import arrayReduce from './.internal/arrayReduce.js'
-import baseEach from './.internal/baseEach.js'
-import baseReduce from './.internal/baseReduce.js'
+const arrayReduce = require('./.internal/arrayReduce.js');
+const baseEach = require('./.internal/baseEach.js');
+const baseReduce = require('./.internal/baseReduce.js');
 
 /**
  * Reduces `collection` to a value which is the accumulated result of running
@@ -41,4 +41,4 @@ function reduce(collection, iteratee, accumulator) {
   return func(collection, iteratee, accumulator, initAccum, baseEach)
 }
 
-export default reduce
+module.exports = reduce;

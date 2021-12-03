@@ -24,4 +24,4 @@ function baseFor(object, iteratee, keysFunc) {
   return object
 }
 
-export default baseFor
+module.exports = baseFor;
