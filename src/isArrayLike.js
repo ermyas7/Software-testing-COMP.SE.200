@@ -1,4 +1,4 @@
-import isLength from './isLength.js'
+const isLength = require('./isLength.js');
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -27,4 +27,4 @@ function isArrayLike(value) {
   return value != null && typeof value !== 'function' && isLength(value.length)
 }
 
-export default isArrayLike
+module.exports = isArrayLike;

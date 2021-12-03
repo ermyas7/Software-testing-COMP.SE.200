@@ -1,4 +1,4 @@
-import root from './.internal/root.js'
+const root = require('./.internal/root.js');
 
 /** Detect free variable `exports`. */
 const freeExports = typeof exports === 'object' && exports !== null && !exports.nodeType && exports
@@ -32,4 +32,4 @@ const nativeIsBuffer = Buffer ? Buffer.isBuffer : undefined
  */
 const isBuffer = nativeIsBuffer || (() => false)
 
-export default isBuffer
+module.exports = isBuffer;

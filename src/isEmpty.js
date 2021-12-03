@@ -1,9 +1,9 @@
-import getTag from './.internal/getTag.js'
-import isArguments from './isArguments.js'
-import isArrayLike from './isArrayLike.js'
-import isBuffer from './isBuffer.js'
-import isPrototype from './.internal/isPrototype.js'
-import isTypedArray from './isTypedArray.js'
+const getTag = require('./.internal/getTag.js');
+const isArguments = require('./isArguments.js');
+const isArrayLike = require('./isArrayLike.js');
+const isBuffer = require('./isBuffer.js');
+const isPrototype = require('./.internal/isPrototype.js');
+const isTypedArray = require('./isTypedArray.js');
 
 /** Used to check objects for own properties. */
 const hasOwnProperty = Object.prototype.hasOwnProperty
@@ -66,4 +66,4 @@ function isEmpty(value) {
   return true
 }
 
-export default isEmpty
+module.exports = isEmpty;

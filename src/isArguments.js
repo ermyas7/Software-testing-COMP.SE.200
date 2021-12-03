@@ -1,5 +1,5 @@
-import getTag from './.internal/getTag.js'
-import isObjectLike from './isObjectLike.js'
+const getTag = require('./.internal/getTag.js');
+const isObjectLike = require('./isObjectLike.js');
 
 /**
  * Checks if `value` is likely an `arguments` object.
@@ -20,4 +20,4 @@ function isArguments(value) {
   return isObjectLike(value) && getTag(value) == '[object Arguments]'
 }
 
-export default isArguments
+module.exports = isArguments;

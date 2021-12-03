@@ -1,6 +1,6 @@
-import getTag from './.internal/getTag.js'
-import nodeTypes from './.internal/nodeTypes.js'
-import isObjectLike from './isObjectLike.js'
+const getTag = require('./.internal/getTag.js');
+const nodeTypes = require('./.internal/nodeTypes.js');
+const isObjectLike = require('./isObjectLike.js');
 
 /** Used to match `toStringTag` values of typed arrays. */
 const reTypedTag = /^\[object (?:Float(?:32|64)|(?:Int|Uint)(?:8|16|32)|Uint8Clamped)Array\]$/
@@ -27,4 +27,4 @@ const isTypedArray = nodeIsTypedArray
   ? (value) => nodeIsTypedArray(value)
   : (value) => isObjectLike(value) && reTypedTag.test(getTag(value))
 
-export default isTypedArray
+module.exports = isTypedArray;
