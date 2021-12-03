@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/ermyas7/Software-testing-COMP.SE.200/badge.svg?branch=main)](https://coveralls.io/github/ermyas7/Software-testing-COMP.SE.200?branch=main)
 # Student template
 
 ## Purpose of this repository
