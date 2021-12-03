@@ -1,10 +1,15 @@
 const assert = require('assert');
 const capitalize = require('../src/capitalize.js');
 
+// custome capitalise uitility
 const toUpper = (x) => x.split('').map((w, i) => i === 0 ? w.toUpperCase() : w.toLowerCase()).join('');
+
 describe('Capitilize', () => {
+
+    //test inputs
     const x = 'freedom';
     const y = 'FREEDOM'
+
     it(`Should capitilize small letter word ${x} to ${toUpper(x)}`, () => {
         assert.equal(capitalize(x), toUpper(x));
     })
