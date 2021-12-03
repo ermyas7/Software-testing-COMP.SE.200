@@ -1,4 +1,4 @@
-import freeGlobal from './freeGlobal.js'
+const freeGlobal = require('./freeGlobal.js');
 
 /** Detect free variable `exports`. */
 const freeExports = typeof exports === 'object' && exports !== null && !exports.nodeType && exports
@@ -25,4 +25,4 @@ const nodeTypes = ((() => {
   } catch (e) {}
 })())
 
-export default nodeTypes
+module.exports = nodeTypes;

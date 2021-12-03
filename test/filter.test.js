@@ -45,7 +45,6 @@ describe('Filter', () => {
 
     it('Should return active users', () => {
 
-        console.log(filter(usersWithMultipleActive, ({ active }) => active === true));
         // get active users
         const activeUsers = usersWithMultipleActive.filter(({active}) => active === true);
         expect(filter(usersWithMultipleActive, ({ active }) => active === true)).deep.equal(activeUsers);
