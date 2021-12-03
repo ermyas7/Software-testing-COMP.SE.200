@@ -22,4 +22,4 @@ function createRound(methodName) {
   }
 }
 
-export default createRound
+module.exports =  createRound;

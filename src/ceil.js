@@ -1,4 +1,4 @@
-import createRound from './.internal/createRound.js'
+const createRound = require('./.internal/createRound.js');
 
 /**
  * Computes `number` rounded up to `precision`. (Round up: the smallest integer greater than or equal to a given number.)
@@ -21,4 +21,4 @@ import createRound from './.internal/createRound.js'
  */
 const ceil = createRound('ceil')
 
-export default ceil
+module.exports  = ceil;

@@ -1,5 +1,5 @@
-import assert from 'assert';
-import ceil from '../src/ceil.js';
+const assert = require('assert');
+const ceil = require('../src/ceil.js');
 
 describe('Ceil', function() {
 
