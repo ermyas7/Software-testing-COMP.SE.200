@@ -25,11 +25,11 @@ describe('countBy', () => {
         expect(countBy(usersWithEmptyElement, value => value.active)).deep.equal({});
     })
 
-    it('Should return 0 true and 2 false', () => {
-        expect(countBy(usersWithNoActive, value => value.active)).deep.equal({true: 0, false: 2});
+    it('Should return 2 false', () => {
+        expect(countBy(usersWithNoActive, value => value.active)).deep.equal({false: 2});
     })
 
-    it('Should return 2 true and 0 false', () => {
-        expect(countBy(usersWithNoinActive, value => value.active)).deep.equal({true: 2, false: 0});
+    it('Should return 2 true', () => {
+        expect(countBy(usersWithNoinActive, value => value.active)).deep.equal({true: 2});
     })
 })
