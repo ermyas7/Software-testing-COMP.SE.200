@@ -1,5 +1,5 @@
-import baseAssignValue from './.internal/baseAssignValue.js'
-import reduce from './reduce.js'
+const baseAssignValue = require('./.internal/baseAssignValue.js');
+const reduce = require('./reduce.js');
 
 /** Used to check objects for own properties. */
 const hasOwnProperty = Object.prototype.hasOwnProperty
@@ -38,4 +38,4 @@ function countBy(collection, iteratee) {
   }, {})
 }
 
-export default countBy
+module.exports = countBy;

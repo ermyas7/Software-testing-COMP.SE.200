@@ -3,39 +3,14 @@ const assert = chai.assert;
 const expect = chai.expect;   
 const should = chai.should();
 const filter = require('../src/filter.js');
+const { usersWithActive,
+        usersWithMultipleInactive,
+        usersWithMultipleActive,
+        usersWithNoActive,
+        usersWithNoinActive,
+        usersWithEmptyElement} = require('./testData.js');
 
 describe('Filter', () => {
-
-    //test data
-    const usersWithActive = [
-           { 'user': 'barney', 'active': true },
-           { 'user': 'fred',   'active': false }
-         ]
-
-    const usersWithMultipleInactive = [
-    { 'user': 'barney', 'active': true },
-    { 'user': 'fred',   'active': false },
-    { 'user': 'Mike',   'active': false },
-    ]     
-    
-    const usersWithMultipleActive = [
-    { 'user': 'barney', 'active': true },
-    { 'user': 'Jone', 'active': true },
-    { 'user': 'fred',   'active': false }
-    ]
-
-    const usersWithNoActive = [
-        { 'user': 'Jone', 'active': false },
-        { 'user': 'fred',   'active': false }
-    ]
-
-    const usersWithNoinActive = [
-        { 'user': 'Jone', 'active': true },
-        { 'user': 'fred',   'active': true }
-    ]
-
-    const usersWithEmptyElement = [];
-
     it('Should return active user', () => {
 
         // get  active user
